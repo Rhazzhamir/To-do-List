@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <font></font> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <!-- style -->
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- Bootstrap Icons CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        <title>To-Do-List</title>
+    </head>
+    <body>
+        <div>
+            <div class="navbarList">
+                TO-do-List
+            </div>
+            <div class="main">
+                <div class="Left">
+                
+                </div>
+                <div class="Right">
+                    <header class="Todo_header">
+                        List
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addTodoModal">+</button>                    </header>
+                    <div class="Todo_main">
+                        <div class="List">
+                            <!-- checkbox -->
+                            <td>
+                                <div class="checkbox-wrapper-12">
+                                    <div class="cbx">
+                                        <input class="cbx-product" type="checkbox" id="cbx-12">
+                                        <label for="cbx-12"></label>
+                                        <svg fill="none" viewBox="0 0 15 14" height="14" width="15">
+                                            <path d="M2 8.36364L6.23077 12L13 2"></path>
+                                        </svg>
+                                    </div>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <filter id="goo-12">
+                                            <feGaussianBlur result="blur" stdDeviation="4" in="SourceGraphic"></feGaussianBlur>
+                                            <feColorMatrix result="goo-12" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" mode="matrix" in="blur"></feColorMatrix>
+                                            <feBlend in2="goo-12" in="SourceGraphic"></feBlend>
+                                            </filter>
+                                        </defs> 
+                                    </svg>
+                                </div>            
+                            </td>
+                            <p class="Title_list">Rhazzhamir</p> 
+                            <div class="btnList">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#biEyeModal" id="bi-eye">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                                <button id="bi-trash">
+                                    <i class="bi bi-trash" id="bi-trash"></i>                            
+                                </button>
+                            </div>
+                        </div>
+                         <div class="List">
+                            <!-- checkbox -->
+                            <td>
+                                <div class="checkbox-wrapper-12">
+                                    <div class="cbx">
+                                        <input class="cbx-product" type="checkbox" id="cbx-12">
+                                        <label for="cbx-12"></label>
+                                        <svg fill="none" viewBox="0 0 15 14" height="14" width="15">
+                                            <path d="M2 8.36364L6.23077 12L13 2"></path>
+                                        </svg>
+                                    </div>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <filter id="goo-12">
+                                            <feGaussianBlur result="blur" stdDeviation="4" in="SourceGraphic"></feGaussianBlur>
+                                            <feColorMatrix result="goo-12" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" mode="matrix" in="blur"></feColorMatrix>
+                                            <feBlend in2="goo-12" in="SourceGraphic"></feBlend>
+                                            </filter>
+                                        </defs> 
+                                    </svg>
+                                </div>            
+                            </td>
+                            <p class="Title_list">Rhazzhamir</p> 
+                            <div class="btnList">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#biEyeModal" id="bi-eye">
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                                <button id="bi-trash">
+                                    <i class="bi bi-trash" id="bi-trash"></i>                            
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- Modal for Add Todo -->
+        <div class="modal fade" id="addTodoModal" tabindex="-1" aria-labelledby="addTodoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="addTodoModalLabel">Add Todo</h1>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="todo-title" class="form-label">Title</label>
+                                <input type="text" class="form-control" id="todo-title" placeholder="Enter title" aria-describedby="emailHelp">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="todo-Description" class="form-label">Description</label>
+                                <textarea type="text" class="form-control" id="todo-description"></textarea>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="todo-deadline" class="form-label">Deadline</label>
+                                <input type="text" class="form-control" id="todo-deadline" placeholder="Enter deadline" aria-describedby="emailHelp">
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- bi-eye -->
+        <!-- Modal for bi-eye -->
+        <div class="modal fade" id="biEyeModal" tabindex="-1" aria-labelledby="biEyeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title  fs-5" id="biEyeModalTitle">Title</h1>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Done</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>"©"<span id="footer-year">2024</span>". All rights reserved."</p>
+            <p>By Rhazzhamir I. Aguilar</p>
+        </footer>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
