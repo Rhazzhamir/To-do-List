@@ -5,7 +5,6 @@
 .navbarList {
     position: relative;
     padding: 30px;
-    border: 1px solid black;
     text-align: center;
     font-size: 2rem;
     font-family: "Bebas Neue", sans-serif;
@@ -27,13 +26,13 @@
 .Todo_header{
     position: relative;
     margin: 50px 50px 0 50px;
-    border: 1px solid black;
     background: rgb(9,112,116);
     background: linear-gradient(90deg, rgba(9,112,116,1) 7%, rgba(27,183,200,1) 51%, rgba(4,97,98,1) 100%);
     font-family: sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 2rem;
+    border-radius: 10px;
 }
 .Todo_header > button{
     margin-left: 20px;
@@ -44,20 +43,21 @@
     background: linear-gradient(90deg, rgba(3,112,115,1) 7%, rgba(0,0,0,1) 51%, rgba(3,103,103,1) 100%);
 }
 .Todo_main{
-    border: 1px solid black;
     margin: 0 50px 0 50px;
     padding: 20px;
     background: rgb(215, 222, 222);
+    border-radius: 15px;
+    box-shadow:  5px 3px 3px #4f4b4b;         
 
 }
 
 
 .List{
     margin-bottom: 10px;
-    border:  1px solid black;
-    box-shadow:  5px 5px 10px #4f4b4b;         
+    box-shadow:  10px 5px 10px #4f4b4b;         
     display: flex; 
     justify-content: space-around;
+    border-radius: 10px;
 }
 .btnList{
     position: relative;
@@ -225,4 +225,10 @@ footer{
         background: #866efb;
         box-shadow: 0 -36px 0 -10px transparent, 32px -16px 0 -10px transparent, 32px 16px 0 -10px transparent, 0 36px 0 -10px transparent, -32px 16px 0 -10px transparent, -32px -16px 0 -10px transparent;
         }
+    }
+
+
+    /* modal */
+    #biEyeModal_Title{
+        text-align: center;
     }
