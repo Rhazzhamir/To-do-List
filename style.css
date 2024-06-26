@@ -61,7 +61,7 @@
 }
 .btnList{
     position: relative;
-    /* padding-top: 8px; */
+    padding-top: 8px;
     gap: 25px;
     display: flex;
     justify-content: space-between;
@@ -70,7 +70,7 @@
     position: relative;
     top: 8px;
 }
-#bi-eye , #bi-trash {
+#bi-eye , #bi-trashs {
     background: none;
     border: none;
     padding: 0;
@@ -227,8 +227,3 @@ footer{
         }
     }
 
-
-    /* modal */
-    #biEyeModal_Title{
-        text-align: center;
-    }
